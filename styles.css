@@ -1,0 +1,45 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+#icon1 {
+  width: 200px;
+  height: auto;
+}
+#header1 {
+  display: flex;
+  gap: 200px;
+  background-color: #40a578;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "\1F1E6\1F1EB";
+  font-weight: bold;
+}
+#head {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 100px;
+  gap: 100px;
+}
+
+#connection {
+  margin-top: 0px;
+  cursor: pointer;
+}
+#panier {
+  margin-top: 0px;
+  cursor: pointer;
+}
+#panier:hover {
+  color: #9dde8b;
+}
+#recherche {
+  background-color: #9dde8b;
+  padding: 40px, auto;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
