@@ -1,45 +1,503 @@
 body {
   padding: 0px;
   margin: 0px;
+  width: 100%;
 }
-#icon1 {
-  width: 200px;
-  height: auto;
+
+#head a {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 85%;
 }
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn:hover {
+  background: #a3d8ff;
+  border-radius: 100px;
+}
+
+.soinvisage {
+  color: #088395;
+}
+.soincheveux {
+  color: #8576ff;
+}
+.nosoffres {
+  color: #ef4040;
+}
+
+.apromo {
+  border-radius: 4px;
+  background-color: #fdde55;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.apromo {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.apromo:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.apromo:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.apromo:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#promotion {
+  margin-top: -36px;
+}
+
+#promotion div {
+  margin: 0 0 20px 10px;
+  font-size: 20px;
+}
+
+.imgpromo {
+  width: 100%;
+  height: 500px;
+  display: none;
+}
+
+.imgpromo.active {
+  display: block;
+}
+
 #header1 {
   display: flex;
   gap: 200px;
-  background-color: #40a578;
+  background-color: #5ab2ff;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "\1F1E6\1F1EB";
   font-weight: bold;
+  position: relative;
+  height: 70px;
 }
+
+.logo {
+  width: 95px;
+  position: absolute;
+  left: 139px;
+}
+
 #head {
   margin-top: 20px;
   display: flex;
   margin-left: 100px;
   gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 #connection {
-  margin-top: 0px;
+  margin: 0;
   cursor: pointer;
 }
+
 #panier {
-  margin-top: 0px;
+  margin: 0;
   cursor: pointer;
 }
-#panier:hover {
-  color: #9dde8b;
+
+#panier i {
+  margin-right: 5px;
 }
+
+#panier:hover {
+  color: #008dda;
+}
+
 #recherche {
-  background-color: #9dde8b;
+  background-color: #5ab2ff;
   padding: 40px, auto;
   border: none;
   color: white;
   font-size: 15px;
   border-radius: 30px;
   cursor: pointer;
+}
+#img-0 {
+  width: 200px;
+  height: auto;
+}
+#img-1 {
+  width: 200px;
+  height: auto;
+}
+#img-2 {
+  width: 200px;
+  height: auto;
+}
+
+/* #shop {
+  display: flex;
+  margin-top: 30px;
+} */
+#shop {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#soin-visage {
+  font-size: 20px;
+  margin: 0 0 20px 10px;
+}
+
+#img-s-visage {
+  width: 300px;
+  height: 400px;
+}
+#soin-visage {
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 20px 100px;
+  background-color: #ffc700;
+  color: white;
+}
+#container-0,
+#container-1,
+#container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#container-1:hover {
+  transform: translateY(5px);
+}
+#container-0:hover {
+  transform: translateY(5px);
+}
+#container-2:hover {
+  transform: translateY(5px);
+}
+#section-product {
+  display: flex;
+  gap: 300px;
+  padding: 34px 50px 48px 48px;
+  text-align: center;
+  /* box-shadow: 0 24px 52px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s; */
+}
+/* #section-product:hover {
+  transform: translateY(20px);
+} */
+
+#btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #5ab2ff;
+  border-radius: 12%;
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  font-size: 20px;
+}
+.text {
+  text-align: center;
+}
+#prix {
+  font-weight: bold;
+}
+#shop-imgs {
+  display: flex;
+}
+#img-0,
+#img-1,
+#img-2,
+#img-3 {
+  width: 300px;
+  height: auto;
+}
+
+/* Partie Hair
+  
+} */
+#container-0,
+#container-1,
+#container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#container-hair-1:hover {
+  transform: translateY(5px);
+}
+#container-hair-0:hover {
+  transform: translateY(5px);
+}
+#container-hair-2:hover {
+  transform: translateY(5px);
+}
+/* #section-product {
+  display: flex;
+  gap: 300px;
+  padding: 34px 50px 48px 48px;
+} */
+#img-hair-0,
+#img-hair-1,
+#img-hair-2,
+#img-hair-3 {
+  width: 400px;
+  height: auto;
+}
+
+#hairshop {
+  display: flex;
+  gap: 270px;
+}
+#global-hair {
+  display: flex;
+  flex-direction: column;
+
+  padding: 34px 50px 48px 48px;
+  /* justify-content: center;
+  align-items: center;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s; */
+}
+#img-s-hair {
+  width: 300px;
+  height: 400px;
+  margin-left: 55px;
+}
+#section-product-hair {
+  display: flex;
+  gap: 242px;
+  text-align: center;
+}
+#container-hair-0,
+#container-hair-1,
+#container-hair-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#soin-hair {
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 20px 100px;
+  background-color: #ffc700;
+  color: white;
+}
+#hairshop-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#soin-hair {
+  font-size: 20px;
+  margin: 0 0 20px 10px;
+}
+#product {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+  padding: 18px;
+}
+#product-imgs {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#product-imgs-display {
+  width: 50px;
+  height: auto;
+}
+#star {
+  margin-top: 50px;
+  background-color: none;
+}
+#card {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #003285;
+}
+#product-details-cart {
+  color: white;
+  font-size: 20px;
+}
+#product-details {
+  text-align: center;
+}
+/* footer */
+
+footer {
+  border-top: 1px solid #000;
+}
+
+.soc {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.soc .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.soc .fa:hover {
+  opacity: 0.7;
+}
+
+.soc .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.soc .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.soc .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.soc .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.list-inline {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
 }
